@@ -1,0 +1,42 @@
+@import '../abstracts/mixin.scss';
+@import '../abstracts/variables.scss';
+
+.sidebar {
+  width: 257px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $color-bg-secondary;
+ 
+  &__head  {
+    width: 100%;
+    padding: 24px 20px;
+    background-image: url('/assets/images/background-image.png');
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__info {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  &__title {
+    @include main-text;
+    margin-bottom: 5px;
+    color: $color-white;
+  }
+
+  &__email-parent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__email {
+    @include main-text;
+    margin-right: 10px;
+    color: $color-white;
+  }
+}
+

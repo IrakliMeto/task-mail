@@ -1,0 +1,27 @@
+@mixin main-text {
+  font-family: $font-roboto;
+  font-size: $font-size-main;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@mixin secondary-text {
+  font-family: $font-roboto;
+  font-size: $font-size-secondary;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+@mixin title-text {
+  font-family: $font-roboto;
+  font-size: $font-size-title;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@mixin sub-text {
+  font-family: $font-roboto;
+  font-size: $font-size-sub-text;
+  font-weight: 400;
+  line-height: 15px;
+}

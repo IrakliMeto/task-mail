@@ -1,0 +1,44 @@
+@import '../abstracts/mixin.scss';
+@import '../abstracts/variables.scss';
+
+.nav {
+  height: 100%;
+  width: 100%;
+  border: 1px solid $color-border;
+
+  &__list {
+    padding: 25px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+    border-bottom: 1px solid $color-border;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__link {
+    @include main-text;
+    display: flex;
+    align-items: center;
+    color: $color-text;
+    transition: ease $transition-time;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+
+    &--active {
+      color: $color-link-active;
+
+      &:hover {
+        color: none;
+      }
+    }
+
+    img {
+      margin-right: 15px;
+    }
+  }
+}

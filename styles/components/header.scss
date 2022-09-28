@@ -1,0 +1,34 @@
+@import '../abstracts/mixin.scss';
+@import '../abstracts/variables.scss';
+
+.header {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background-color: $color-bg-main;
+ 
+  &__holder {
+    width: 100%;
+    padding: 10px 40px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 50px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    @include title-text;
+    margin-left: 20px;
+    color: $color-white;
+  }
+
+  &__refresh {
+    margin-right: 20px;
+  }
+}
